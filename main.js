@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (cursoCreado) {
         // JSON.parse se utliza para convertir un objeto que estaba convertido a texto para convertirlo a objeto de nuevo
         const objetoCurso = JSON.parse(cursoCreado);
-        mensaje.innerHTML = ' Curso: ' + objetoCurso.nombre + '<br>'  + ' Profesor: ' + objetoCurso.profesor + '<br>' + ' Precio: ' + objetoCurso.precio + '<br>' + ' Ciudad: ' + objetoCurso.ciudad + '<br>' + ' Cupo: ' + objetoCurso.cupo;
+        mensaje.innerHTML = ' Curso: ' + objetoCurso.nombre + '<br>'  + ' Profesor: ' + objetoCurso.profesor + '<br>' + ' Precio: ' + objetoCurso.precio + '<br>' + ' Ciudad: ' + objetoCurso.ciudad + '<br>g' + ' Cupo: ' + objetoCurso.cupo;
     }
 });
 
