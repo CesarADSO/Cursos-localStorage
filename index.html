@@ -4,19 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     
-    <h1>EJERCICIO LOCALSTORAGE</h1>
+    <h1>GESTIÓN DE CURSOS</h1>
 
     <form id="formulario">
-        <input id="nombre" type="text" placeholder="Ingresa tu nombre">
+        <input id="curso" type="text" placeholder="Nombre del curso">
+        <input id="profesor" type="text" placeholder="Nombre del Profesor">
+        <input id="precio" type="text" placeholder="Precio del curso">
+        <input id="ciudad" type="text" placeholder="Nombre de la ciudad">
+        <input id="cupo" type="text" placeholder="cupo de...">
         <button type="submit">Guardar</button>
     </form>
 
-    <h2 id="saludo">Bievenido</h2>
-    <button id="borrar">Borrar Nombre</button>
-    <a href="perfil.html">Ver perfil</a>
+    <h2 id="mensaje-curso">Aquí se mostrará el curso creado</h2>
+    <button id="borrar">Borrar Curso</button>
+    <br>
+    <a href="cursos.html">Ver Cursos</a>
 
     <script src="main.js"></script>
 </body>
