@@ -29,10 +29,13 @@ form.addEventListener('submit', (e) => {
         cupo: cupo
     };
 
-    localStorage.setItem('curso', JSON.stringify(nuevoCurso))
+    const cursosGuardados = JSON.parse(localStorage.getItem('cursos')) || [];
+    // agregamos al arreglo cursos guardados el nuevo curso
+    cursosGuardados.push(nuevoCurso);
+    localStorage.setItem('cursos', JSON.stringify(cursosGuardados));
 
     form.reset();
-    
+
 });
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -40,15 +43,17 @@ document.addEventListener('DOMContentLoaded', () => {
     if (cursoCreado) {
         // JSON.parse se utliza para convertir un objeto que estaba convertido a texto para convertirlo a objeto de nuevo
         const objetoCurso = JSON.parse(cursoCreado);
-        mensaje.innerHTML = ' Curso: ' + objetoCurso.nombre + '<br>'  + ' Profesor: ' + objetoCurso.profesor + '<br>' + ' Precio: ' + objetoCurso.precio + '<br>' + ' Ciudad: ' + objetoCurso.ciudad + '<br>g' + ' Cupo: ' + objetoCurso.cupo;
+        mensaje.innerHTML = ' Curso: ' + objetoCurso.nombre + '<br>' + ' Profesor: ' + objetoCurso.profesor + '<br>' + ' Precio: ' + objetoCurso.precio + '<br>' + ' Ciudad: ' + objetoCurso.ciudad + '<br>g' + ' Cupo: ' + objetoCurso.cupo;
     }
 });
 
-
-
-
 btnEliminar.addEventListener('click', () => {
-    localStorage.removeItem('curso');
-    
+    localStorage.removeItem('cursos');
+    mensaje.textContent = "no hay cursos"
 })
+
+
+
+
+
 
