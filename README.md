@@ -52,6 +52,16 @@ Este proyecto consiste en un sistema básico en JavaScript para registrar cursos
 
 ---
 
+## Contacto
+
+Si deseas conectar conmigo, puedes hacerlo a través de:
+
+* GitHub: https://github.com/CesarADSO
+* LinkedIn: https://www.linkedin.com/in/cesarr-c-morales-gonz%C3%A1lez-1b182a352/
+* Correo: cesaramorales1103@gmail.com
+
+---
+
 ## Notas
 
 * El proyecto utiliza LocalStorage, por lo tanto los datos se guardan solo en el navegador y se borran si se limpia la memoria local.
